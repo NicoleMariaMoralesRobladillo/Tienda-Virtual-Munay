@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munay Makeup</title>
+    <link rel="shortcut icon" href="./images/logo_icon_munay.png" />
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/3e6836537a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dosis:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JAVASCRIPT -->
+    <script defer src="./javascript/index.js"></script>
+  </head>
+  <body class="grid">
+    <!-- HEADER -->
+    <header>
+      <!-- NAV BAR -->
+      <div class="container container--header">
+        <div class="row">
+          <a href="./index.html" class="logo">
+            <img
+              class="logo__image"
+              src="./images/logo_munay.png"
+              alt="logo_munay"
+            />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./pages/tutoriales.html"
+                  >Tutoriales</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./pages/conocenos.html">Conócenos</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- NAV BUTTON -->
+        <button class="navToggle" aria-label="abrir navegacion">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main id="main--index" class="grid">
+      <!-- PRESENTATION -->
+      <section id="introductionSection">
+        <div class="container" id="introductionSection__content">
+          <h1 class="title title--mainTitle">DESCUBRE TU PASIÓN CON MUNAY</h1>
+          <p class="title title--subTitle2">
+            Productos de maquillaje de tus marcas favoritas a bajos precios
+          </p>
+          <a id="introductionSection__content__link" href="./pages/tienda.html">
+            Comprar ahora</a
+          >
+        </div>
+      </section>
+      <!-- SHIPMENT INFORMATION -->
+      <section id="shipmentInformationSection">
+        <div class="container">
+          <h2 class="title title--subTitle1">ENVÍOS GRATUITOS</h2>
+          <div class="row">
+            <p class="column textDescription textDescription--center">
+              Por todo Magdalena del Mar (Lima, Perú) y por compras mayores a
+              S/.200.
+            </p>
+            <img class="column" src="./images/envio.png" alt="envio" />
+          </div>
+        </div>
+      </section>
+      <!-- BEST-SELLING PRODUCTS -->
+      <section id="bestSellingProductsSection">
+        <div class="container">
+          <h2 class="title title--subTitle1">MÁS VENDIDOS</h2>
+          <div class="productsBox">
+            <article class="product">
+              <img
+                src="./images/mascara_de_pestañas.png"
+                alt="mascara_de_pestañas"
+                class="product__image"
+              />
+              <div class="product__text">
+                <h4>Máscara de pestañas Mega Full Size</h4>
+                <p>
+                  A prueba de agua
+                  <br />
+                  Marca Ésika
+                  <br />
+                  S/.49.90
+                </p>
+              </div>
+              <a href="./pages/tienda.html#eyesMakeupSection">
+                <button type="button" class="button button--blackBuyButton">
+                  Comprar
+                </button>
+              </a>
+            </article>
+            <article class="product">
+              <img
+                src="./images/rubor.png"
+                alt="rubor"
+                class="product__image"
+              />
+              <div class="product__text">
+                <h4>Rubor HD - Refill</h4>
+                <p>
+                  Color Rosa Rubí
+                  <br />
+                  Marca Ésika
+                  <br />
+                  S/.24.90
+                </p>
+              </div>
+              <a href="./pages/tienda.html#faceMakeupSection">
+                <button type="button" class="button button--blackBuyButton">
+                  Comprar
+                </button>
+              </a>
+            </article>
+            <article class="product">
+              <img
+                src="./images/labial_colorfix.png"
+                alt="labial_colorfix"
+                class="product__image"
+              />
+              <div class="product__text">
+                <h4>Labial Colorfix 24H</h4>
+                <p>
+                  Color Rojo Seductor
+                  <br />
+                  Marca Ésika
+                  <br />
+                  S/.42.90
+                </p>
+              </div>
+              <a href="./pages/tienda.html#lipsMakeupSection">
+                <button type="button" class="button button--blackBuyButton">
+                  Comprar
+                </button>
+              </a>
+            </article>
+            <article class="product">
+              <img
+                src="./images/delineador.png"
+                alt="delineador"
+                class="product__image"
+              />
+              <div class="product__text">
+                <h4>Delineador Líquido Punta Plumón Eye Pro</h4>
+                <p>
+                  Color Negro Extremo
+                  <br />
+                  Marca Ésika
+                  <br />
+                  S/.41.90
+                </p>
+              </div>
+              <a href="./pages/tienda.html#eyesMakeupSection">
+                <button type="button" class="button button--blackBuyButton">
+                  Comprar
+                </button>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- SUSCRIPTION SECTION -->
+      <section id="suscriptionSection">
+        <div class="container">
+          <h2 class="title title--subTitle1">
+            SÉ LA PRIMERA PERSONA EN CONOCER NUESTROS PRODUCTOS Y OFERTAS
+          </h2>
+          <form>
+            <label for="email_suscrito" class="form__text"
+              >Ingresa tu email aquí</label
+            >
+            <input
+              type="email"
+              name="email_suscrito"
+              id="email_suscrito"
+              required
+              class="form__input"
+            />
+            <div class="buttonBox">
+              <input
+                type="submit"
+                value="Unirse"
+                class="button button--greenSubmitButton"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer__content">
+        <div class="footer__content__text">Búscanos en las redes</div>
+        <div>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook-f footer__content__icon"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram footer__content__icon"></i
+          ></a>
+          <a href="https://www.tiktok.com/"
+            ><i class="fa-brands fa-tiktok footer__content__icon"></i
+          ></a>
+          <a href="https://www.whatsapp.com/"
+            ><i class="fa-brands fa-whatsapp footer__content__icon"></i
+          ></a>
+        </div>
+        <div class="footer__content__text">© 2022 Creado por Munay</div>
+      </div>
+    </footer>
+  </body>
+</html>

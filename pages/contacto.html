@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munay Makeup</title>
+    <link rel="shortcut icon" href="../images/logo_icon_munay.png" />
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/3e6836537a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dosis:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JAVASCRIPT -->
+    <script defer src="../javascript/index.js"></script>
+  </head>
+  <body class="grid">
+    <!-- HEADER -->
+    <header>
+      <!-- NAV BAR -->
+      <div class="container container--header">
+        <div class="row">
+          <a href="../index.html" class="logo">
+            <img
+              class="logo__image"
+              src="../images/logo_munay.png"
+              alt="logo_munay"
+            />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./tienda.html">Tienda</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./tutoriales.html">Tutoriales</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./conocenos.html">Conócenos</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- NAV BUTTON -->
+        <button class="navToggle" aria-label="abrir navegacion">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main id="main--contacto" class="grid">
+      <!-- MAIN TITLE -->
+      <h1
+        id="contactoMainTitle"
+        class="title title--blackWhiteAndCenter title--mainTitle"
+      >
+        FORMULARIO DE CONTACTO
+      </h1>
+      <!-- CONTACT FORM -->
+      <section id="contactFormSection">
+        <div class="container">
+          <form>
+            <label for="nombres_mensaje" class="form__text">Nombres</label>
+            <input
+              type="text"
+              name="nombres_mensaje"
+              id="nombres_mensaje"
+              class="form__input"
+              required
+            />
+            <label for="apellidos_mensaje" class="form__text">Apellidos</label>
+            <input
+              type="text"
+              name="apellidos_mensaje"
+              id="apellidos_mensaje"
+              class="form__input"
+              required
+            />
+            <label for="email_mensaje" class="form__text">Email</label>
+            <input
+              type="email"
+              name="email_mensaje"
+              id="email_mensaje"
+              class="form__input"
+              required
+            />
+            <label for="contenido_mensaje" class="form__text">Mensaje</label>
+            <textarea
+              name="contenido_mensaje"
+              id="contenido_mensaje"
+              class="form__input"
+              rows="15"
+              required
+            ></textarea>
+            <div class="form__text">Sexo</div>
+            <select
+              name="sexo"
+              id="sexo"
+              class="form__text form__input"
+              required
+            >
+              <option value="femenino" class="form__text">Femenino</option>
+              <option value="masculino" class="form__text">Masculino</option>
+              <option value="no_prefiere" class="form__text">
+                Prefiero no decirlo
+              </option>
+            </select>
+            <div class="form__text">
+              <input
+                type="checkbox"
+                name="terminos_condiciones"
+                id="terminos_condiciones"
+                value="1"
+                required
+              />
+              Acepto que mis datos sean implementados a la base de datos de
+              Munay
+            </div>
+            <div class="form__text">
+              ¿Desea recibir notificaciones por correo sobre nuevos productos y
+              ofertas?
+            </div>
+            <div class="form__text">
+              <input
+                type="radio"
+                name="notificaciones_correo"
+                id="notificaciones_correo"
+                value="1"
+                required
+              />
+              Sí
+            </div>
+            <div class="form__text">
+              <input
+                type="radio"
+                name="notificaciones_correo"
+                id="notificaciones_correo1"
+                value="0"
+                required
+              />
+              No
+            </div>
+            <div class="buttonBox">
+              <input
+                type="submit"
+                class="button button--greenSubmitButton"
+                value="Enviar"
+              />
+              <input
+                type="reset"
+                class="button button--pinkResetButton"
+                value="Limpiar"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer__content">
+        <div class="footer__content__text">Búscanos en las redes</div>
+        <div>
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook-f footer__content__icon"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram footer__content__icon"></i
+          ></a>
+          <a href="https://www.tiktok.com/"
+            ><i class="fa-brands fa-tiktok footer__content__icon"></i
+          ></a>
+          <a href="https://www.whatsapp.com/"
+            ><i class="fa-brands fa-whatsapp footer__content__icon"></i
+          ></a>
+        </div>
+        <div class="footer__content__text">© 2022 Creado por Munay</div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,452 @@
+/*RESET*/
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 50%;
+}
+
+/*BOXES*/
+
+section {
+  height: fit-content;
+}
+.container,
+.column {
+  width: 100%;
+}
+
+/*TEXT FORMAT*/
+
+.title {
+  font-family: "Cinzel", sans-serif;
+  font-weight: normal;
+}
+.title--blackWhiteAndCenter {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+}
+.title--mainTitle {
+  font-size: 4rem;
+}
+.title--subTitle1 {
+  font-size: 3rem;
+}
+.title--subTitle2 {
+  font-size: 2rem;
+}
+.textDescription {
+  font-size: 1.8rem;
+  font-family: "Dosis", sans-serif;
+}
+.textDescription--center {
+  text-align: center;
+}
+.list {
+  margin-left: 1.5rem;
+}
+
+/*IMAGES AND IFRAMES*/
+
+img,
+iframe {
+  width: 100%;
+}
+
+/*BUTTONS*/
+
+.buttonBox {
+  display: block;
+  text-align: center;
+}
+.button {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  margin: 1rem auto 0 auto;
+  display: inline-block;
+  cursor: pointer;
+}
+.button:hover,
+.button:active {
+  transform: scale(1.05);
+}
+.button--blackBuyButton {
+  color: white;
+  background-color: black;
+}
+.button--greenSubmitButton {
+  color: black;
+  background-color: greenyellow;
+}
+.button--pinkResetButton {
+  color: black;
+  background-color: #fcbcb2;
+}
+
+/*BODY*/
+
+.grid {
+  display: grid;
+  grid-row-gap: 5rem;
+}
+body {
+  grid-template-columns: 0.3fr 9fr 0.3fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    ". main ."
+    "footer footer footer";
+}
+
+/*HEADER*/
+
+header {
+  background-color: #fcbcb2;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  grid-area: header;
+  height: fit-content;
+}
+.container--header {
+  position: relative;
+}
+
+/*LOGO*/
+
+.logo {
+  text-decoration: none;
+}
+.logo__image {
+  max-width: 20rem;
+}
+
+/*NAV*/
+
+.nav {
+  text-align: center;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  visibility: hidden;
+  margin-bottom: 3rem;
+}
+.nav__list {
+  list-style-type: none;
+}
+.nav__item {
+  margin-top: 1rem;
+}
+.nav__item:hover,
+.nav__item:focus {
+  background-color: #f35b5b;
+  border-radius: 1rem;
+}
+.nav__link {
+  color: black;
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/*NAV BUTTON*/
+
+.navToggle {
+  cursor: pointer;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 2.8rem;
+}
+.navToggle:focus,
+.navToggle:hover {
+  transform: scale(1.1);
+}
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+.hamburger::before {
+  transform: translateY(-6px);
+}
+.hamburger::after {
+  transform: translateY(3px);
+}
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+/*MAIN*/
+
+main {
+  line-height: 4rem;
+  grid-area: main;
+  grid-template-columns: 100%;
+}
+
+/*MAIN OF INDEX*/
+
+#main--index {
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "introductionSection"
+    "shipmentInformationSection"
+    "bestSellingProductsSection"
+    "suscriptionSection";
+}
+
+/*Introduction section*/
+#introductionSection {
+  background-image: url(../images/mujeres_modelando.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-area: introductionSection;
+}
+#introductionSection__content {
+  color: white;
+  max-width: max-content;
+  text-align: center;
+  line-height: 8rem;
+  padding: 1rem;
+}
+#introductionSection__content__link {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Cinzel", sans-serif;
+}
+
+/*Shipment Information Section*/
+#shipmentInformationSection {
+  grid-area: shipmentInformationSection;
+}
+
+/*Best-selling products section*/
+#bestSellingProductsSection {
+  grid-area: bestSellingProductsSection;
+}
+/*Se reutilizará para el html de tienda*/
+.productsBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.product {
+  border: rgb(0, 0, 0);
+  border-radius: 1.5rem;
+  border-width: 0.6rem;
+  border-style: dotted;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+.product__image {
+  max-width: 300px;
+}
+.product__text {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.8rem;
+}
+
+/*Suscription section*/
+#suscriptionSection {
+  grid-area: suscriptionSection;
+}
+/*Se reutilizará para otros formularios*/
+.form__text {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.7rem;
+}
+.form__input {
+  width: 100%;
+  border-width: 0.2rem;
+  border-color: black;
+  border-style: solid;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/*MAIN OF TIENDA*/
+
+#main--tienda {
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "tiendaMainTitle"
+    "eyesMakeupSection"
+    "lipsMakeupSection"
+    "faceMakeupSection";
+}
+#tiendaMainTitle {
+  grid-area: tiendaMainTitle;
+}
+#eyesMakeupSection {
+  grid-area: eyesMakeupSection;
+}
+#lipsMakeupSection {
+  grid-area: lipsMakeupSection;
+}
+#faceMakeupSection {
+  grid-area: faceMakeupSection;
+}
+
+/*MAIN OF TUTORIALES*/
+
+#main--tutoriales {
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "tutorialesMainTitle"
+    "videoTutorials";
+}
+#tutorialesMainTitle {
+  grid-area: tutorialesMainTitle;
+}
+#videoTutorials {
+  grid-area: videoTutorials;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "videoTutorials__1"
+    "videoTutorials__2"
+    "videoTutorials__3";
+}
+#videoTutorials__1 {
+  grid-area: videoTutorials__1;
+}
+#videoTutorials__2 {
+  grid-area: videoTutorials__2;
+}
+#videoTutorials__3 {
+  grid-area: videoTutorials__3;
+}
+
+/*MAIN OF CONOCENOS*/
+
+#main--conocenos {
+  grid-row: auto auto auto;
+  grid-template-areas:
+    "conocenosMainTitle"
+    "whatDoWeDoSection"
+    "foundersSection";
+}
+#conocenosMainTitle {
+  grid-area: conocenosMainTitle;
+}
+#whatDoWeDoSection {
+  grid-area: whatDoWeDoSection;
+}
+#foundersSection {
+  grid-area: foundersSection;
+}
+
+/*MAIN OF CONTACTO*/
+
+#main--contacto {
+  grid-template-rows: auto;
+  grid-template-areas:
+    "contactoMainTitle"
+    "contactFormSection";
+}
+#contactoMainTitle {
+  grid-area: contactoMainTitle;
+}
+#contactFormSection {
+  grid-area: contactFormSection;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #fcbcb2;
+  padding: 0.5rem 0;
+  grid-area: footer;
+}
+.footer__content {
+  text-align: center;
+  line-height: 4rem;
+}
+.footer__content__text {
+  font-size: 2rem;
+  color: black;
+  font-family: "Dosis", sans-serif;
+}
+.footer__content__icon {
+  font-size: 3rem;
+  color: #fcbcb2;
+  background-color: black;
+  border-style: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/*MEDIA QUERYS*/
+
+@media (min-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+  .container--header {
+    position: static;
+  }
+  .navToggle {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+    height: auto;
+    position: static;
+    margin-bottom: 0rem;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: right;
+  }
+  .nav__item {
+    margin: 0 0 0 2rem;
+  }
+  .nav__link {
+    padding: 0 1.6rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img,
+  iframe {
+    max-width: 50%;
+  }
+}
