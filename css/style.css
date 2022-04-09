@@ -120,6 +120,9 @@ header {
   grid-area: header;
   height: fit-content;
 }
+.headerBox {
+  margin-top: 0;
+}
 .container--header {
   position: relative;
 }
