@@ -18,6 +18,9 @@ section {
 .column {
   width: 100%;
 }
+.row {
+  margin-top: 2rem;
+}
 
 /*TEXT FORMAT*/
 
@@ -364,6 +367,20 @@ main {
 }
 #foundersSection {
   grid-area: foundersSection;
+  grid-row: auto auto auto;
+  grid-template-areas:
+    "foundersTitle"
+    "founder1"
+    "founder2";
+}
+#foundersTitle {
+  grid-area: foundersTitle;
+}
+#founder1 {
+  grid-area: founder1;
+}
+#founder2 {
+  grid-area: founder2;
 }
 
 /*MAIN OF CONTACTO*/
