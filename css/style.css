@@ -76,10 +76,14 @@ iframe {
   margin: 1rem auto 0 auto;
   display: inline-block;
   cursor: pointer;
+  transition: all 0.1s;
 }
 .button:hover,
 .button:active {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  color: black;
+  background-color: #ff6060;
+  font-weight: 500;
 }
 .button--blackBuyButton {
   color: white;
@@ -92,6 +96,35 @@ iframe {
 .button--pinkResetButton {
   color: black;
   background-color: #fcbcb2;
+}
+
+/*ANIMATIONS*/
+
+.column--animatedLeft {
+  animation: from-left 1.5s ease;
+}
+.column--animatedRight {
+  animation: from-right 1.5s ease;
+}
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 /*BODY*/
@@ -253,6 +286,14 @@ main {
 /*Shipment Information Section*/
 #shipmentInformationSection {
   grid-area: shipmentInformationSection;
+}
+#shipmentInformationSection__background__text {
+  background-color: rgb(23, 19, 19);
+  text-transform: uppercase;
+  color: white;
+  font-family: Cinzel;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 /*Best-selling products section*/
@@ -465,8 +506,28 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+  .row--stretch {
+    justify-content: stretch;
+    align-items: stretch;
+  }
   img,
   iframe {
     max-width: 50%;
+  }
+  #shipmentInformationSection__background {
+    background: linear-gradient(
+      to right,
+      rgb(255, 255, 93),
+      rgb(134, 255, 93),
+      rgb(93, 255, 185),
+      rgb(147, 97, 255),
+      rgb(252, 135, 135)
+    );
+    display: flex;
+    align-items: center;
+  }
+  #shipmentInformationSection__background__text {
+    font-size: 3rem;
+    line-height: 8rem;
   }
 }
