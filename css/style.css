@@ -27,13 +27,6 @@ html {
   font-size: 2rem;
 }
 
-/*IMAGES AND IFRAMES*/
-
-img,
-iframe {
-  width: 100%;
-}
-
 /*BUTTONS*/
 
 .buttonBox {
