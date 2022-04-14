@@ -45,10 +45,10 @@ html {
 
 /*ANIMATIONS*/
 
-.column--animatedLeft {
+.col--animatedLeft {
   animation: from-left 1.5s ease;
 }
-.column--animatedRight {
+.col--animatedRight {
   animation: from-right 1.5s ease;
 }
 @keyframes from-right {
