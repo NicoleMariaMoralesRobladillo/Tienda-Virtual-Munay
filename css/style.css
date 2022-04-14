@@ -116,21 +116,6 @@ footer {
   max-width: 285px;
 }
 
-/*Suscription section*/
-/*Se reutilizará para otros formularios*/
-.form__text {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.7rem;
-}
-.form__input {
-  width: 100%;
-  border-width: 0.2rem;
-  border-color: black;
-  border-style: solid;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-}
-
 /*FOOTER*/
 
 .footer__icon {
