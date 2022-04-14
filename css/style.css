@@ -127,25 +127,26 @@ iframe {
   }
 }
 
-/*HEADER*/
+/*HEADER AND FOOTER BACKGROUND*/
 
-header {
+header,
+footer {
   background-color: #fcbcb2;
 }
 
 /*NAV*/
 
 .logo {
-  width: 8rem;
-}
-.nav-link {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.2rem;
+  max-width: 15rem;
 }
 .nav-item:hover,
 .nav-item:focus {
   background-color: #ff9191;
   border-radius: 0.5rem;
+}
+.navbar-toggler {
+  width: 5rem;
+  height: 5rem;
 }
 
 /*MAIN*/
@@ -228,7 +229,6 @@ main {
 /*FOOTER*/
 
 footer {
-  background-color: #fcbcb2;
   padding: 0.5rem 0;
 }
 .footer__content {
