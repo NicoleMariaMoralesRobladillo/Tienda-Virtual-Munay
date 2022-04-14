@@ -168,16 +168,6 @@ main {
   background-size: cover;
 }
 
-/*Shipment Information Section*/
-#shipmentInformationSection__background__text {
-  background-color: rgb(23, 19, 19);
-  text-transform: uppercase;
-  color: white;
-  font-family: Cinzel;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
 /*Best-selling products section*/
 /*Se reutilizará para el html de tienda*/
 .productsBox {
@@ -242,9 +232,20 @@ footer {
 
 /*MEDIA QUERYS*/
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   html {
     font-size: 58%;
+  }
+  /*Shipment information section*/
+  #shipmentInformationSection__background {
+    background: linear-gradient(
+      to right,
+      rgb(255, 255, 93),
+      rgb(134, 255, 93),
+      rgb(93, 255, 185),
+      rgb(147, 97, 255),
+      rgb(252, 135, 135)
+    );
   }
 }
 @media (min-width: 1024px) {
@@ -286,21 +287,5 @@ footer {
   img,
   iframe {
     max-width: 50%;
-  }
-  #shipmentInformationSection__background {
-    background: linear-gradient(
-      to right,
-      rgb(255, 255, 93),
-      rgb(134, 255, 93),
-      rgb(93, 255, 185),
-      rgb(147, 97, 255),
-      rgb(252, 135, 135)
-    );
-    display: flex;
-    align-items: center;
-  }
-  #shipmentInformationSection__background__text {
-    font-size: 3rem;
-    line-height: 8rem;
   }
 }
