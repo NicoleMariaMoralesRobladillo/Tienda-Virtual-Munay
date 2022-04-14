@@ -98,57 +98,85 @@
         FORMULARIO DE CONTACTO
       </h1>
       <!-- CONTACT FORM -->
-      <section id="contactFormSection">
+      <section>
         <div class="container">
           <form>
-            <label for="nombres_mensaje" class="form__text">Nombres</label>
-            <input
-              type="text"
-              name="nombres_mensaje"
-              id="nombres_mensaje"
-              class="form__input"
-              required
-            />
-            <label for="apellidos_mensaje" class="form__text">Apellidos</label>
-            <input
-              type="text"
-              name="apellidos_mensaje"
-              id="apellidos_mensaje"
-              class="form__input"
-              required
-            />
-            <label for="email_mensaje" class="form__text">Email</label>
-            <input
-              type="email"
-              name="email_mensaje"
-              id="email_mensaje"
-              class="form__input"
-              required
-            />
-            <label for="contenido_mensaje" class="form__text">Mensaje</label>
-            <textarea
-              name="contenido_mensaje"
-              id="contenido_mensaje"
-              class="form__input"
-              rows="15"
-              required
-            ></textarea>
-            <div class="form__text">Sexo</div>
-            <select
-              name="sexo"
-              id="sexo"
-              class="form__text form__input"
-              required
-            >
-              <option value="femenino" class="form__text">Femenino</option>
-              <option value="masculino" class="form__text">Masculino</option>
-              <option value="no_prefiere" class="form__text">
-                Prefiero no decirlo
-              </option>
-            </select>
-            <div class="form__text">
+            <div class="input-group mt-5">
+              <span
+                class="bg-black text-white input-group-text fs-3 border border-dark"
+                >Nombres y apellidos</span
+              >
+              <input
+                type="text"
+                aria-label="Nombres"
+                placeholder="Nombres"
+                class="form-control fs-3 border border-dark text-black"
+                required
+              />
+              <input
+                type="text"
+                aria-label="Apellidos"
+                placeholder="Apellidos"
+                class="form-control fs-3 border border-dark text-black"
+                required
+              />
+            </div>
+            <div class="input-group mt-5">
+              <span
+                class="bg-black text-white input-group-text fs-3 border border-dark"
+                >Correo electrónico</span
+              >
+              <input
+                type="text"
+                class="form-control fs-3 border border-dark text-black"
+                placeholder="Username"
+                aria-label="Username"
+                required
+              />
+              <span
+                class="bg-black text-white input-group-text fs-3 border border-dark"
+                >@</span
+              >
+              <input
+                type="text"
+                class="form-control fs-3 border border-dark text-black"
+                placeholder="Server"
+                aria-label="Server"
+                required
+              />
+            </div>
+            <div class="input-group mt-5 h-50">
+              <span
+                class="bg-black text-white input-group-text fs-3 border border-dark"
+                >Mensaje</span
+              >
+              <textarea
+                class="form-control fs-3 border border-dark text-black"
+                aria-label="With textarea"
+                rows="7"
+                required
+              ></textarea>
+            </div>
+            <div class="input-group mt-5 text-center">
+              <span
+                class="bg-black text-white input-group-text fs-3 border border-dark rounded-start"
+                >Sexo</span
+              >
+              <select
+                name="sexo"
+                id="sexo"
+                class="fs-3 border border-dark flex-fill bg-white rounded-end text-center text-black"
+                required
+              >
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="no_prefiere">Prefiero no decirlo</option>
+              </select>
+            </div>
+            <div class="mt-5 fs-3 text-black">
               <input
                 type="checkbox"
+                class="text-black"
                 name="terminos_condiciones"
                 id="terminos_condiciones"
                 value="1"
@@ -157,11 +185,11 @@
               Acepto que mis datos sean implementados a la base de datos de
               Munay
             </div>
-            <div class="form__text">
+            <div class="mt-5 fs-3 text-black">
               ¿Desea recibir notificaciones por correo sobre nuevos productos y
               ofertas?
             </div>
-            <div class="form__text">
+            <div class="mt-2 fs-3 text-black">
               <input
                 type="radio"
                 name="notificaciones_correo"
@@ -171,7 +199,7 @@
               />
               Sí
             </div>
-            <div class="form__text">
+            <div class="mt-2 fs-3 text-black">
               <input
                 type="radio"
                 name="notificaciones_correo"
@@ -181,15 +209,15 @@
               />
               No
             </div>
-            <div class="buttonBox">
+            <div class="d-block text-center my-5">
               <input
                 type="submit"
-                class="button button--greenSubmitButton"
+                class="button text-black button--greenSubmitButton px-3 border-0 rounded-3"
                 value="Enviar"
               />
               <input
                 type="reset"
-                class="button button--pinkResetButton"
+                class="button text-black button--pinkResetButton px-3 border-0 rounded-3"
                 value="Limpiar"
               />
             </div>
