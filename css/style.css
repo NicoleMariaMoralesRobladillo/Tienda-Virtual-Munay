@@ -197,25 +197,9 @@ main {
 
 /*FOOTER*/
 
-footer {
-  padding: 0.5rem 0;
-}
-.footer__content {
-  text-align: center;
-  line-height: 4rem;
-}
-.footer__content__text {
-  font-size: 2rem;
-  color: black;
-  font-family: "Dosis", sans-serif;
-}
-.footer__content__icon {
+.footer__icon {
   font-size: 3rem;
   color: #fcbcb2;
-  background-color: black;
-  border-style: none;
-  padding: 1rem;
-  border-radius: 0.5rem;
 }
 
 /*MEDIA QUERYS*/
