@@ -127,26 +127,10 @@ iframe {
   }
 }
 
-/*BODY*/
-
-.grid {
-  display: grid;
-  grid-row-gap: 5rem;
-}
-body {
-  grid-template-columns: 0.3fr 9fr 0.3fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "header header header"
-    ". main ."
-    "footer footer footer";
-}
-
 /*HEADER*/
 
 header {
   background-color: #fcbcb2;
-  grid-area: header;
 }
 
 /*NAV*/
@@ -168,20 +152,9 @@ header {
 
 main {
   line-height: 4rem;
-  grid-area: main;
-  grid-template-columns: 100%;
 }
 
 /*MAIN OF INDEX*/
-
-#main--index {
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "introductionSection"
-    "shipmentInformationSection"
-    "bestSellingProductsSection"
-    "suscriptionSection";
-}
 
 /*Introduction section*/
 #introductionSection {
@@ -189,7 +162,6 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  grid-area: introductionSection;
 }
 #introductionSection__content {
   color: white;
@@ -205,9 +177,6 @@ main {
 }
 
 /*Shipment Information Section*/
-#shipmentInformationSection {
-  grid-area: shipmentInformationSection;
-}
 #shipmentInformationSection__background__text {
   background-color: rgb(23, 19, 19);
   text-transform: uppercase;
@@ -218,9 +187,6 @@ main {
 }
 
 /*Best-selling products section*/
-#bestSellingProductsSection {
-  grid-area: bestSellingProductsSection;
-}
 /*Se reutilizará para el html de tienda*/
 .productsBox {
   display: flex;
@@ -245,9 +211,6 @@ main {
 }
 
 /*Suscription section*/
-#suscriptionSection {
-  grid-area: suscriptionSection;
-}
 /*Se reutilizará para otros formularios*/
 .form__text {
   font-family: "Dosis", sans-serif;
@@ -262,113 +225,11 @@ main {
   border-radius: 0.5rem;
 }
 
-/*MAIN OF TIENDA*/
-
-#main--tienda {
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "tiendaMainTitle"
-    "eyesMakeupSection"
-    "lipsMakeupSection"
-    "faceMakeupSection";
-}
-#tiendaMainTitle {
-  grid-area: tiendaMainTitle;
-}
-#eyesMakeupSection {
-  grid-area: eyesMakeupSection;
-}
-#lipsMakeupSection {
-  grid-area: lipsMakeupSection;
-}
-#faceMakeupSection {
-  grid-area: faceMakeupSection;
-}
-
-/*MAIN OF TUTORIALES*/
-
-#main--tutoriales {
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "tutorialesMainTitle"
-    "videoTutorials";
-}
-#tutorialesMainTitle {
-  grid-area: tutorialesMainTitle;
-}
-#videoTutorials {
-  grid-area: videoTutorials;
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "videoTutorials__1"
-    "videoTutorials__2"
-    "videoTutorials__3";
-}
-#videoTutorials__1 {
-  grid-area: videoTutorials__1;
-}
-#videoTutorials__2 {
-  grid-area: videoTutorials__2;
-}
-#videoTutorials__3 {
-  grid-area: videoTutorials__3;
-}
-
-/*MAIN OF CONOCENOS*/
-
-#main--conocenos {
-  grid-row: auto auto auto;
-  grid-template-areas:
-    "conocenosMainTitle"
-    "whatDoWeDoSection"
-    "foundersSection";
-}
-#conocenosMainTitle {
-  grid-area: conocenosMainTitle;
-}
-#whatDoWeDoSection {
-  grid-area: whatDoWeDoSection;
-}
-#foundersSection {
-  grid-area: foundersSection;
-  grid-row: auto auto auto;
-  grid-template-areas:
-    "foundersTitle"
-    "founder1"
-    "founder2";
-}
-#foundersTitle {
-  grid-area: foundersTitle;
-}
-#founder1 {
-  grid-area: founder1;
-}
-#founder2 {
-  grid-area: founder2;
-}
-
-/*MAIN OF CONTACTO*/
-
-#main--contacto {
-  grid-template-rows: auto;
-  grid-template-areas:
-    "contactoMainTitle"
-    "contactFormSection";
-}
-#contactoMainTitle {
-  grid-area: contactoMainTitle;
-}
-#contactFormSection {
-  grid-area: contactFormSection;
-}
-
 /*FOOTER*/
 
 footer {
   background-color: #fcbcb2;
   padding: 0.5rem 0;
-  grid-area: footer;
 }
 .footer__content {
   text-align: center;
