@@ -12,19 +12,6 @@ html {
   line-height: 4rem;
 }
 
-/*BOXES*/
-
-section {
-  height: fit-content;
-}
-.container,
-.column {
-  width: 100%;
-}
-.row {
-  margin-top: 2rem;
-}
-
 /*TEXT FORMAT*/
 
 .title {
