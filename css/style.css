@@ -29,38 +29,17 @@ html {
 
 /*BUTTONS*/
 
-.buttonBox {
-  display: block;
-  text-align: center;
-}
 .button {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.6rem;
-  padding: 1rem;
-  border-style: none;
-  border-radius: 0.5rem;
-  margin: 1rem auto 0 auto;
-  display: inline-block;
-  cursor: pointer;
   transition: all 0.1s;
 }
 .button:hover,
 .button:active {
   transform: scale(1.1);
-  color: black;
-  background-color: #ff6060;
-  font-weight: 500;
-}
-.button--blackBuyButton {
-  color: white;
-  background-color: black;
 }
 .button--greenSubmitButton {
-  color: black;
   background-color: greenyellow;
 }
 .button--pinkResetButton {
-  color: black;
   background-color: #fcbcb2;
 }
 
