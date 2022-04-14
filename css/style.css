@@ -170,26 +170,14 @@ main {
 
 /*Best-selling products section*/
 /*Se reutilizará para el html de tienda*/
-.productsBox {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
 .product {
   border: rgb(0, 0, 0);
   border-radius: 1.5rem;
   border-width: 0.6rem;
   border-style: dotted;
-  text-align: center;
-  margin: 1rem;
-  padding: 1rem;
 }
 .product__image {
-  max-width: 300px;
-}
-.product__text {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.8rem;
+  max-width: 285px;
 }
 
 /*Suscription section*/
