@@ -1,0 +1,20 @@
+{
+  "name": "tienda_virtual_munay-morales",
+  "version": "1.0.0",
+  "description": "![screencapture-nicolemariamoralesrobladillo-github-io-Tienda-Virtual-Munay-Morales-2022-04-11-10_11_11](https://user-images.githubusercontent.com/100738814/162772058-6a067b83-cb01-4abc-b61e-148de5c45ab2.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoleMariaMoralesRobladillo/Tienda-Virtual-Munay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoleMariaMoralesRobladillo/Tienda-Virtual-Munay/issues"
+  },
+  "homepage": "https://github.com/NicoleMariaMoralesRobladillo/Tienda-Virtual-Munay#readme"
+}
