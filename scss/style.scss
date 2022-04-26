@@ -1,3 +1,9 @@
+/*VARIABLES*/
+
+$primary-color: #fcbcb2;
+
+/*SCSS*/
+
 /*RESET*/
 
 html {
@@ -15,7 +21,7 @@ html {
 /*HEADER AND FOOTER BACKGROUND*/
 
 header {
-  background-color: #fcbcb2;
+  background-color: $primary-color;
 }
 
 /*NAV*/
@@ -60,7 +66,7 @@ header {
     background-color: greenyellow;
   }
   &--pinkResetButton {
-    background-color: #fcbcb2;
+    background-color: $primary-color;
   }
 }
 
@@ -116,10 +122,10 @@ header {
 
 /*FOOTER*/
 .footer {
-  background-color: #fcbcb2;
+  background-color: $primary-color;
   &__icon {
     font-size: 3rem;
-    color: #fcbcb2;
+    color: $primary-color;
   }
 }
 
@@ -130,15 +136,17 @@ header {
     font-size: 58%;
   }
   /*Shipment information section*/
-  #shipmentInformationSection__background {
-    background: linear-gradient(
-      to right,
-      rgb(255, 255, 93),
-      rgb(134, 255, 93),
-      rgb(93, 255, 185),
-      rgb(147, 97, 255),
-      rgb(252, 135, 135)
-    );
+  #shipmentInformationSection {
+    &__background {
+      background: linear-gradient(
+        to right,
+        rgb(255, 255, 93),
+        rgb(134, 255, 93),
+        rgb(93, 255, 185),
+        rgb(147, 97, 255),
+        rgb(252, 135, 135)
+      );
+    }
   }
 }
 @media (min-width: 1024px) {
