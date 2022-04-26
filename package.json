@@ -10,8 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/NicoleMariaMoralesRobladillo/Tienda-Virtual-Munay.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "maquillaje",
+    "Perú",
+    "popular"
+  ],
+  "author": "Nicole Maria Morales Robladillo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NicoleMariaMoralesRobladillo/Tienda-Virtual-Munay/issues"
