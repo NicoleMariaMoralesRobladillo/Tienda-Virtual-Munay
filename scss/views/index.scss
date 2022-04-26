@@ -1,0 +1,20 @@
+#introductionSection {
+  background-image: url(../images/mujeres_modelando.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  #shipmentInformationSection {
+    &__background {
+      background: linear-gradient(
+        to right,
+        rgb(255, 255, 93),
+        rgb(134, 255, 93),
+        rgb(93, 255, 185),
+        rgb(147, 97, 255),
+        rgb(252, 135, 135)
+      );
+    }
+  }
+}

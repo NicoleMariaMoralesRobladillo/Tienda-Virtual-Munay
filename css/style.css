@@ -1,38 +1,23 @@
-@charset "UTF-8";
-/*VARIABLES*/
-/*SCSS*/
-/*RESET*/
 html {
   font-size: 50%;
 }
 
-/*BODY*/
+@media (min-width: 1024px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 58%;
+  }
+}
 * {
   font-family: "Dosis", sans-serif;
   font-size: 1.8rem;
   line-height: 4rem;
 }
 
-/*HEADER*/
-header {
-  background-color: #fcbcb2;
-}
-
-/*NAV*/
-.logo {
-  max-width: 15rem;
-}
-.logo:hover, .logo:focus {
-  background-color: #ff9191;
-  border-radius: 0.5rem;
-}
-
-.navbar-toggler {
-  width: 5rem;
-  height: 5rem;
-}
-
-/*TEXT FORMAT*/
 .title {
   font-family: "Cinzel", sans-serif;
 }
@@ -46,26 +31,11 @@ header {
   font-size: 2rem;
 }
 
-/*BUTTONS*/
-.button {
-  transition: all 0.1s;
-}
-.button:hover, .button:active {
-  transform: scale(1.1);
-}
-.button--greenSubmitButton {
-  background-color: greenyellow;
-}
-.button--pinkResetButton {
-  background-color: #fcbcb2;
-}
-
-/*ANIMATIONS*/
-.col--animatedLeft {
-  animation: from-left 1.5s ease;
-}
 .col--animatedRight {
   animation: from-right 1.5s ease;
+}
+.col--animatedLeft {
+  animation: from-left 1.5s ease;
 }
 
 @keyframes from-right {
@@ -88,25 +58,23 @@ header {
     transform: translateX(0px);
   }
 }
-/*MAIN OF INDEX*/
-/*Introduction section*/
-#introductionSection {
-  background-image: url(../images/mujeres_modelando.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+header {
+  background-color: #fcbcb2;
 }
 
-/*Best-selling products section*/
-/*Se reutilizará para el html de tienda*/
-.product {
-  border: rgb(0, 0, 0);
-  border-radius: 1.5rem;
-  border-width: 0.6rem;
-  border-style: dotted;
+.logo {
+  max-width: 15rem;
+}
+.logo:hover, .logo:focus {
+  background-color: #ff9191;
+  border-radius: 0.5rem;
 }
 
-/*FOOTER*/
+.navbar-toggler {
+  width: 5rem;
+  height: 5rem;
+}
+
 .footer {
   background-color: #fcbcb2;
 }
@@ -115,21 +83,36 @@ header {
   color: #fcbcb2;
 }
 
-/*MEDIA QUERYS*/
-@media (min-width: 992px) {
-  html {
-    font-size: 58%;
-  }
+.button {
+  transition: all 0.1s;
+}
+.button:hover, .button:active {
+  transform: scale(1.1);
+}
+.button--greenSubmitButton {
+  background-color: greenyellow;
+}
+.button--pinkResetButton {
+  background-color: #fcbcb2;
+}
 
-  /*Shipment information section*/
+#introductionSection {
+  background-image: url(../images/mujeres_modelando.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
   #shipmentInformationSection__background {
     background: linear-gradient(to right, rgb(255, 255, 93), rgb(134, 255, 93), rgb(93, 255, 185), rgb(147, 97, 255), rgb(252, 135, 135));
   }
 }
-@media (min-width: 1024px) {
-  html {
-    font-size: 62.5%;
-  }
+.product {
+  border: rgb(0, 0, 0);
+  border-radius: 1.5rem;
+  border-width: 0.6rem;
+  border-style: dotted;
 }
 
 /*# sourceMappingURL=style.css.map */

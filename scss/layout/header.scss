@@ -1,0 +1,15 @@
+header {
+  background-color: $primary-color;
+}
+.logo {
+  max-width: 15rem;
+  &:hover,
+  &:focus {
+    background-color: #ff9191;
+    border-radius: 0.5rem;
+  }
+}
+.navbar-toggler {
+  width: 5rem;
+  height: 5rem;
+}

@@ -1,0 +1,20 @@
+$animation: ("animatedRight" from-right 80px, "animatedLeft" from-left -80px);
+.col {
+  @each $name, $direction, $translateX in $animation {
+    &--#{$name} {
+      animation: $direction 1.5s ease;
+    }
+  }
+}
+@each $name, $direction, $translateX in $animation {
+  @keyframes #{$direction} {
+    $animationConfiguration: (0% 0 $translateX, 100% 1 0px);
+    @each $percentage, $opacity, $transformTranslate in $animationConfiguration
+    {
+      #{$percentage} {
+        opacity: $opacity;
+        transform: translateX($transformTranslate);
+      }
+    }
+  }
+}

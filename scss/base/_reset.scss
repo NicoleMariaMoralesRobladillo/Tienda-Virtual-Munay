@@ -1,0 +1,14 @@
+html {
+  font-size: 50%;
+}
+$sizes: (
+  1024px: 62.5%,
+  992px: 58%,
+);
+@each $min-width, $font-size in $sizes {
+  @media (min-width: $min-width) {
+    html {
+      font-size: $font-size;
+    }
+  }
+}
