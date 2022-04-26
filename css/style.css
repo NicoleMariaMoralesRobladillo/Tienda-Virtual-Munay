@@ -12,8 +12,7 @@ html {
 }
 
 /*HEADER AND FOOTER BACKGROUND*/
-header,
-footer {
+header {
   background-color: #fcbcb2;
 }
 
@@ -21,9 +20,7 @@ footer {
 .logo {
   max-width: 15rem;
 }
-
-.nav-item:hover,
-.nav-item:focus {
+.logo:hover, .logo:focus {
   background-color: #ff9191;
   border-radius: 0.5rem;
 }
@@ -37,15 +34,12 @@ footer {
 .title {
   font-family: "Cinzel", sans-serif;
 }
-
 .title--mainTitle {
   font-size: 4rem;
 }
-
 .title--subTitle1 {
   font-size: 3rem;
 }
-
 .title--subTitle2 {
   font-size: 2rem;
 }
@@ -54,16 +48,12 @@ footer {
 .button {
   transition: all 0.1s;
 }
-
-.button:hover,
-.button:active {
+.button:hover, .button:active {
   transform: scale(1.1);
 }
-
 .button--greenSubmitButton {
   background-color: greenyellow;
 }
-
 .button--pinkResetButton {
   background-color: #fcbcb2;
 }
@@ -72,7 +62,6 @@ footer {
 .col--animatedLeft {
   animation: from-left 1.5s ease;
 }
-
 .col--animatedRight {
   animation: from-right 1.5s ease;
 }
@@ -116,6 +105,9 @@ footer {
 }
 
 /*FOOTER*/
+.footer {
+  background-color: #fcbcb2;
+}
 .footer__icon {
   font-size: 3rem;
   color: #fcbcb2;
