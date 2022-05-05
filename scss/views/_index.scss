@@ -7,14 +7,7 @@
 @include media(992px) {
   #shipmentInformationSection {
     &__background {
-      background: linear-gradient(
-        to right,
-        rgb(255, 255, 93),
-        rgb(134, 255, 93),
-        rgb(93, 255, 185),
-        rgb(147, 97, 255),
-        rgb(252, 135, 135)
-      );
+      background: map-get($arcoiris, colores);
     }
   }
 }
