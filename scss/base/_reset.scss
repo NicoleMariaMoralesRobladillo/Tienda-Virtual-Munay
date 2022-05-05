@@ -2,7 +2,7 @@ html {
   font-size: 50%;
 }
 @each $min-width, $font-size in $sizes {
-  @media (min-width: $min-width) {
+  @include media($min-width) {
     html {
       font-size: $font-size;
     }

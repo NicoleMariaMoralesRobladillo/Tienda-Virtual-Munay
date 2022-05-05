@@ -109,7 +109,7 @@ header {
   }
 }
 .product {
-  border: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
   border-radius: 1.5rem;
   border-width: 0.6rem;
   border-style: dotted;

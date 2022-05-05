@@ -4,7 +4,7 @@
   background-position: center;
   background-size: cover;
 }
-@media (min-width: 992px) {
+@include media(992px) {
   #shipmentInformationSection {
     &__background {
       background: linear-gradient(
