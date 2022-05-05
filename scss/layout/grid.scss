@@ -1,4 +1,3 @@
-$animation: ("animatedRight" from-right 80px, "animatedLeft" from-left -80px);
 .col {
   @each $name, $direction, $translateX in $animation {
     &--#{$name} {

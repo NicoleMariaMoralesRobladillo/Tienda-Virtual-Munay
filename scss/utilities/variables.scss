@@ -1,1 +1,15 @@
 $primary-color: #fcbcb2;
+$sizes: (
+  1024px: 62.5%,
+  992px: 58%,
+);
+$title: (
+  "mainTitle": 4rem,
+  "subTitle1": 3rem,
+  "subTitle2": 2rem,
+);
+$button: (
+  "greenSubmitButton": greenyellow,
+  "pinkResetButton": $primary-color,
+);
+$animation: ("animatedRight" from-right 80px, "animatedLeft" from-left -80px);

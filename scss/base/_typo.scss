@@ -5,11 +5,6 @@
 }
 .title {
   font-family: "Cinzel", sans-serif;
-  $title: (
-    "mainTitle": 4rem,
-    "subTitle1": 3rem,
-    "subTitle2": 2rem,
-  );
   @each $typeOfTitle, $fontSize in $title {
     &--#{$typeOfTitle} {
       font-size: $fontSize;
