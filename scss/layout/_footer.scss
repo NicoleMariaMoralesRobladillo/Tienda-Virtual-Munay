@@ -1,5 +1,5 @@
 .footer {
-  background-color: $primary-color;
+  @extend header;
   &__icon {
     font-size: 3rem;
     color: $primary-color;

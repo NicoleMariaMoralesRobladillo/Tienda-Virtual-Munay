@@ -58,7 +58,7 @@ html {
     transform: translateX(0px);
   }
 }
-header {
+header, .footer {
   background-color: #fcbcb2;
 }
 
@@ -75,9 +75,6 @@ header {
   height: 5rem;
 }
 
-.footer {
-  background-color: #fcbcb2;
-}
 .footer__icon {
   font-size: 3rem;
   color: #fcbcb2;
