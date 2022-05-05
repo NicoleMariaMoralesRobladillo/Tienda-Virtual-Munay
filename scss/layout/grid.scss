@@ -1,6 +1,7 @@
 .col {
   @each $name, $direction, $translateX in $animation {
     &--#{$name} {
+      @extend .col;
       animation: $direction 1.5s ease;
     }
   }

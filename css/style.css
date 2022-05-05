@@ -18,7 +18,7 @@ html {
   line-height: 4rem;
 }
 
-.title {
+.title, .title--subTitle2, .title--subTitle1, .title--mainTitle {
   font-family: "Cinzel", sans-serif;
 }
 .title--mainTitle {
@@ -83,10 +83,10 @@ header {
   color: #fcbcb2;
 }
 
-.button {
+.button, .button--pinkResetButton, .button--greenSubmitButton {
   transition: all 0.1s;
 }
-.button:hover, .button:active {
+.button:hover, .button--pinkResetButton:hover, .button--greenSubmitButton:hover, .button:active, .button--pinkResetButton:active, .button--greenSubmitButton:active {
   transform: scale(1.1);
 }
 .button--greenSubmitButton {

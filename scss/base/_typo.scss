@@ -7,6 +7,7 @@
   font-family: "Cinzel", sans-serif;
   @each $typeOfTitle, $fontSize in $title {
     &--#{$typeOfTitle} {
+      @extend .title;
       font-size: $fontSize;
     }
   }

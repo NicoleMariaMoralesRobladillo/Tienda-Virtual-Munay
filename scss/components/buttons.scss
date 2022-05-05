@@ -6,6 +6,7 @@
   }
   @each $typeOfButton, $color in $button {
     &--#{$typeOfButton} {
+      @extend .button;
       background-color: $color;
     }
   }
