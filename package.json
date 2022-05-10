@@ -1,7 +1,7 @@
 {
   "name": "tienda_virtual_munay-morales",
   "version": "1.0.0",
-  "description": "![screencapture-nicolemariamoralesrobladillo-github-io-Tienda-Virtual-Munay-Morales-2022-04-11-10_11_11](https://user-images.githubusercontent.com/100738814/162772058-6a067b83-cb01-4abc-b61e-148de5c45ab2.png)",
+  "description": "Tienda virtual de maquillaje que hace envíos a toda Latinoamérica. Sitio web elaborado con HTML, CSS, BOOTSTRAP Y SASS.",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
@@ -12,8 +12,13 @@
   },
   "keywords": [
     "maquillaje",
-    "Perú",
-    "popular"
+    "munay",
+    "ésika",
+    "belleza",
+    "maquillaje para labios",
+    "maquillaje para ojos",
+    "maquillaje aesthetic",
+    "maquillaje económico"
   ],
   "author": "Nicole Maria Morales Robladillo",
   "license": "ISC",
