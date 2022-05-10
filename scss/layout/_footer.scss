@@ -1,7 +1,7 @@
-.footer {
+footer {
   @extend header;
-  &__icon {
-    font-size: 3rem;
-    color: $primary-color;
-  }
+}
+.socialMediaIcon {
+  font-size: 3rem;
+  color: $primary-color;
 }

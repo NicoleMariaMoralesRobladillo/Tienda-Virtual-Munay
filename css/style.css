@@ -58,7 +58,7 @@ html {
     transform: translateX(0px);
   }
 }
-header, .footer {
+header, footer {
   background-color: #fcbcb2;
 }
 
@@ -75,7 +75,7 @@ header, .footer {
   height: 5rem;
 }
 
-.footer__icon {
+.socialMediaIcon {
   font-size: 3rem;
   color: #fcbcb2;
 }
